@@ -1,0 +1,6 @@
+hostname = api.weibo.cn, pay.sc.weibo.com
+
+# 🍪微博签到
+https:\/\/api\.weibo\.cn\/\d\/page\/\w+\?gsid url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/weibo.js
+# 🍪钱包签到
+https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/weibo.js
