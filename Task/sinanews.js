@@ -22,7 +22,7 @@ http-request https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn script-pa
 
 #QX 1.0.7+ :
 [task_local]
-0 9 * * * sinanews.js
+0 9 * * * https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 [rewrite_local]
 https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
@@ -39,7 +39,7 @@ hostname = newsapi.sina.cn, lite.sina.cn
 https?:\/\/lite\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center - script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 https?:\/\/lite\.sina\.cn\/\?resource=userpoint\/signIn - script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 [task_local]
-0 9 * * * sinanews.js
+0 9 * * * https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 
 ~~~~~~~~~~~~~~~~
 
