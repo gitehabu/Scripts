@@ -1,0 +1,6 @@
+hostname = dkd-api.dysdk.com
+
+# 🍪多看点
+#^http:\/\/dkd-api\.dysdk\.com\/user\/index url script-request-body https://raw.githubusercontent.com/age174/-/main/dkd.js
+# 🍪多看点提现
+#^http:\/\/dkd-api\.dysdk\.com\/money\/withdraw_do? url script-request-body https://raw.githubusercontent.com/age174/-/main/dkd.js
