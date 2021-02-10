@@ -1,0 +1,7 @@
+hostname = draw.jdfcloud.com
+
+
+# 🍪宠汪汪助力更新
+^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
+# 🍪宠汪汪助力获取
+^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
