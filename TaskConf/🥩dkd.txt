@@ -1,0 +1,4 @@
+hostname = dkd-api.dysdk.com
+
+# 🥩多看点视频
+^http://dkd-api.dysdk.com/android_video/getaward url script-request-body https://raw.githubusercontent.com/age174/-/main/dkdbody.js
