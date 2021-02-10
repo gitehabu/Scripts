@@ -5,19 +5,18 @@
 2.在未签到情况下，先禁用第一条Cookie链接，然后再次进入签到，通知获取签到Cookie成功 surge极速版配置请自行更换
 Surge 4.0:
 [Script]
-新浪新闻 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js,script-update-interval=0
-新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
-新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
-
+新浪新闻 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js,script-update-interval=0
+新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center,script-path=https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
+新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn,script-path=https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 ------------------
 Loon 2.1.0+
 [Script]
 # 本地脚本
-cron "04 00 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js, enabled=true, tag=新浪新闻
+cron "04 00 * * *" script-path=https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js, enabled=true, tag=新浪新闻
 
-http-request https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+http-request https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center script-path=https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 
-http-request https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+http-request https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn script-path=https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 
 -----------------
 
@@ -25,20 +24,20 @@ http-request https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn script-pa
 [task_local]
 0 9 * * * sinanews.js
 [rewrite_local]
-https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header sinanews.js
-https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header sinanews.js
+https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
+https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 
 ~~~~~~~~~~~~~~~~~~
 
 [MITM]
-hostname = newsapi.sina.cn
+hostname = newsapi.sina.cn, lite.sina.cn
 
 ~~~~~~~~~~~~~~~~
 ＃新浪新闻极速版配置
 
 [rewrite_local]
-https?:\/\/lite\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center - script-request-header sinanews.js
-https?:\/\/lite\.sina\.cn\/\?resource=userpoint\/signIn - script-request-header sinanews.js
+https?:\/\/lite\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center - script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
+https?:\/\/lite\.sina\.cn\/\?resource=userpoint\/signIn - script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 [task_local]
 0 9 * * * sinanews.js
 
