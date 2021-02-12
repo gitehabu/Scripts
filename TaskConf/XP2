@@ -1,4 +1,0 @@
-hostname = http://veishop.iboxpay.com
-
-# 🍪笑谱
-https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/* - script-response-body https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/iboxpay.js
