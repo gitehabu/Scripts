@@ -1,4 +1,4 @@
 hostname = dkd-api.dysdk.com
 
-# 🥩多看点视频
+# 🥩多看点视频2️⃣
 http:\/\/dkd-api\.dysdk\.com\/* url script-request-body https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/duokandian.js
