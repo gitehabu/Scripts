@@ -1,0 +1,5 @@
+hostname = newsapi.sina.cn
+
+https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
+
+
