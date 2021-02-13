@@ -1,5 +1,6 @@
 hostname = newsapi.sina.cn
 
+#签到界面的cookie
 https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 
 
