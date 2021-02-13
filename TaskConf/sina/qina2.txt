@@ -1,5 +1,5 @@
 hostname = newsapi.sina.cn
 
-#获取cookie信息
+#签到信息的cookie
 https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header https://raw.githubusercontent.com/gitehabu/Scripts/gitehabu-patch-1/Task/sinanews.js
 
